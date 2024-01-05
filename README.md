@@ -5,7 +5,7 @@
 
 # Exploit
 
-In Mailtrain's web service the username parameter of the login page does not sanitise, which allows an attacker to inject commands without being authenticated and from a remote machine.
+In Maltrail's web service the username parameter of the login page does not sanitise, which allows an attacker to inject commands without being authenticated and from a remote machine.
 
 In a shell we can separate command with a `;` and what comes before the `;` will be executed as one command and what comes after will be executed as another command, if you inject into the `username` parameter a `;` + a `payload` the `payload` will be executed because the source code uses `subprocess.check_output` to check the value of the `username` parameter.
 
